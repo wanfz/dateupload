@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-@RequestMapping(path = "/articleapi")
+@RequestMapping(path = "/dt")
 public class ArticleController {
     @Autowired
     private ArticleMapper articleMapper;
