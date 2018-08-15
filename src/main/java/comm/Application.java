@@ -12,8 +12,8 @@ import java.util.TimeZone;
 public class Application {
 
     @PostConstruct
-    public void init() {
-        TimeZone.setDefault(TimeZone.getTimeZone("UTC"));
+    void started() {
+        TimeZone.setDefault(TimeZone.getTimeZone("Asia/Shanghai"));
     }
     
     public static void main(String[] args) {
