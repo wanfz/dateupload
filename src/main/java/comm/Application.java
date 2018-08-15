@@ -13,7 +13,7 @@ public class Application {
 
     @PostConstruct
     void started() {
-        TimeZone.setDefault(TimeZone.getTimeZone("CST"));
+        TimeZone.setDefault(TimeZone.getTimeZone("UTC"));
     }
     
     public static void main(String[] args) {
