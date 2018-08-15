@@ -8,6 +8,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @MapperScan("comm.mapper")
 public class Application {
 
+    @PostConstruct
+    void started() {
+        TimeZone.setDefault(TimeZone.getTimeZone("CST"));
+    }
+    
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
     }
